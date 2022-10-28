@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>API - gouvernement</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="assets/favicon.jpg" sizes="32x32">
+</head>
+
+<body>
+  <header>
+    <div class="header-left-side">
+      <a href="https://adresse.data.gouv.fr/">
+        <img src="/assets/logo.svg" alt="">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://adresse.data.gouv.fr/donnees-nationales">données nationales</a>
+        </li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/contribuer">contribuer</a>
+        </li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/ressources">ressources</a></li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/api-doc">api</a>
+        </li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/outils">outils</a>
+        </li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/blog">blog</a>
+        </li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/nous-contacter">nous contacter</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+        <h1><span class="uppercase">api</span> adresse</h1>
+      </svg>
+    </section>
+    <section class="title">
+      <h1>Geo-Localisation avec utilisation de
+        <a href="https://adresse.data.gouv.fr/api-doc/adresse">l'api gouvernement</a>
+      </h1>
+    </section>
+    <div class="tenor-gif-embed" data-postid="25854619" data-share-method="host" data-aspect-ratio="0.7625" data-width="100%">
+      <a href="https://tenor.com/view/seal-meme-gif-25854619">
+        Seal Meme GIF
+      </a>
+      from 
+      <a href="https://tenor.com/search/seal-gifs">
+        Seal GIFs
+      </a>
+    </div> 
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    
+    <section class="form">
+      <h1 class="form">Veuillez renseigner vos coordonnées</h1>
+      <div class="formData">
+        <div class="postcode">
+          <label for="postalCode">
+            Code postal
+          </label>
+          <input id="postalCode" type="number" patern="^[0-9]$">
+          <button onclick="btn_postalCodeGET()">Envoyer</button>
+        </div>
+    
+        <div id="city">
+          <p id="cityResult"></p>
+        </div>
+    
+        <div class="street">
+        </div>
+      </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="left-side">
+      <img class="estalab" src="https://adresse.data.gouv.fr/_next/image?url=%2Fimages%2Flogos%2Fetalab.svg&w=256&q=75" alt="Entreprise Etalab (gouvernement)">
+      <div class="contact">
+        <a href="https://twitter.com/AdresseDataGouv">
+          <img src="assets/twitter.svg" alt="Cliquez ici pour acceder au twitter du gouvernement">
+        </a>
+         <a href="https://github.com/BaseAdresseNationale/adresse.data.gouv.fr">
+          <img src="assets/github.svg" alt="Cliquez ici pour acceder au GitHub du gouvernement">
+        </a>
+        <a href="https://adresse.data.gouv.fr/blog">
+          <img src="assets/blog.svg" alt="Cliquez ici pour acceder au blog du gouvernement">
+        </a>
+        <a href="https://adresse.data.gouv.fr/nous-contacter">
+          <img src="assets/envelop.svg" alt="Cliquez ici pour acceder contacter le gouvernement">
+        </a>
+      </div>
+    </div>
+    <div class="right-side">
+      <a class="home" href="https://adresse.data.gouv.fr/">
+        adresse.data.gouv.fr
+      </a>
+      <ul>
+        <li>
+          <a href="https://adresse.data.gouv.fr/cgu">
+          mentions légales et 
+          <span>
+            CGU
+          </span>
+        </a>
+        </li>
+        <li>
+          <a href="https://doc.adresse.data.gouv.fr/">documentation</a>
+        </li>
+        <li>
+          <a href="https://status.adresse.data.gouv.fr/">
+            supervision 
+            <span>
+              ban/bal
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/accessibilite">accéssibilité : non-conforme
+          </a>
+        </li>
+        <li>
+          <a href="https://adresse.data.gouv.fr/nous-contacter">nous contacter</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="jquery.json"></script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

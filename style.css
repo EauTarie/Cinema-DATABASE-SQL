@@ -1,0 +1,314 @@
+/*
+----------------
+
+-- Devoir effectué par :
+    --  LOUBEAU Alexandre
+    --  Discord : Eau Tarie#5281
+    --  Pseudo sur le serveur Discord de l'Afpa : Wikipédia (Eau Tarie / Alex)
+
+-- SOMMAIRE EFFECTUÉ À LA LIGNE 16
+
+----------------
+-- 
+! Début du devoir sur API GOUVERNEMENT FOUND ADRESSE !
+--
+
+--  Sommaire :
+    -- I. MISE EN FORME DE LA PARTIE DESKTOP (LIGNE XXX À XXX)
+        --  1) MISE EN FORME GLOBALE (LIGNE XXX À XXX)
+        --  2) MISE EN FORME DU HEADER (LIGNE XXX À XXX)
+            --  1. MISE EN FORME DE LA BARRE DE NAVIGATION (LIGNE XXX À XXX)
+
+        --  3) MISE EN FORME DU MAIN (LIGNE XXX À XXX)
+
+            --  1. MISE EN FORME DE LA BANIERE (LIGNE XXX À XXX)
+            --  2. MISE EN FORME DU TITRE PRE-FORMULAIRE (LIGNE XXX À XXX)
+            --  3. MISE EN FORME DE L'OTARIE GIF (LIGNE XXX À XXX)
+            --  4. MISE EN FORME DU FORMULAIRE (LIGNE XXX À XXX)
+
+        --  4) MISE EN FORME DU FOOTER (LIGNE XXX À XXX)
+
+            --  1. MISE EN FORME PARTIE GAUCHE FOOTER (LIGNE XXX À XXX)
+            --  2. MISE EN FORME DE LA PARTIE DROITE FOOTER (LIGNE XXX À XXX)
+
+
+    -- FIN MISE EN FORME DE LA PARTIE DESKTOP
+
+    -- II. MISE EN FORME DE LA PARTIE MOBILE (LIGNE XXX À XXX)
+
+--  FIN SOMMAIRE
+
+*/
+/* MISE EN FORME GLOBALE */
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin:0;
+  }
+/* FIN MISE EN FORME GLOBALE */
+
+/* MISE EN FORME DU HEADER */
+  header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  }
+
+  .header-left-side {
+  max-width:400px;
+  margin-left:10px;
+  }
+
+  .header-left-side a {
+  width:40%;  
+  }
+
+  .header-left-side img {
+  width:424px;
+  height:100px;
+  min-width:100%;
+  max-width:100%;
+  }
+  /* MISE EN FORME DE LA BARRE DE NAVIGATION */
+    nav ul li {
+      display:inline-block;
+    }
+
+    nav ul li a {
+      text-decoration:none;
+      text-transform:capitalize;
+      color:#1C1C1C;
+      border-radius:3px;
+      padding:15px;
+      font-weight:400;
+      font-size:1,1em;
+    }
+
+    nav ul li a:hover {
+      background:#C9D3DF;
+      -webkit-transition: background ease-out 0.5s;
+      transition: background ease-out 0.5;
+    }
+
+    nav ul li a:active {
+      background:#53657d;
+      color:#C9D3DF;
+    }
+  /* FIN MISE EN FORME DE LA BARRE DE NAVIGATION */
+/* FIN MISE EN FORME DU HEADER */
+
+/* MISE EN FORME DU MAIN */
+  /* MISE EN FORME DE LA BANIERE */
+    section.banner {
+      background : #0053b3;
+      display:flex;
+      padding:20px;
+      padding-left:10%;
+    }
+
+    section.banner svg{
+      align-self: center;
+      margin-right:10px;
+    }
+
+    section.banner h1 {
+      color:white;
+      text-transform:capitalize;
+      font-weight:600;
+      font-size:2em;
+    }
+
+    section.banner span {
+      text-transform:uppercase;
+    }
+  /* FIN MISE EN FORME BANIERE */
+
+  /* MISE EN FORME DU TITRE PRE-FORMULAIRE */
+    section.title h1 {
+      text-align:center;
+    }
+
+    section.title h1 a {
+      color:#006Be6;
+      text-decoration:none;
+      text-transform:uppercase;
+      padding:10px;
+      border-radius:3px;
+    }
+
+    section.title h1 a:hover {
+      background:#C9D3DF;
+      -webkit-transition: background ease-out 0.5s;
+      transition: background ease-out 0.5;
+    }
+      section.title h1 a:active {
+        background:#006Be6;
+        color:#C9D3DF;
+      }
+    /* FIN MISE EN FORME DU TITRE PRE-FORMULAIRE */
+
+    /* MISE EN FORME DE L'OTARIE GIF */
+    div.tenor-gif-embed {
+      width:25% !important;
+      margin:0 auto !important;
+    }
+  /* FIN MISE EN FORME DE L'OTARIE GIF */
+
+  /* MISE EN FORME DU FORMULAIRE */
+    section.form {
+      background:#26353f;
+      border:#0053b3 solid 4px;
+      border-radius: 30px;
+      width:80%;
+      margin : 10px auto;
+    }
+
+
+    h1.form {
+      text-align : center;
+      text-transform : uppercase;
+      color: white;
+      font-family: Source Sans Pro,Arial,sans-serif;
+      font-weight:600;
+      font-size:22px;
+      padding-bottom: 10px;
+      margin-block-end:0;
+      border-bottom: #0053b3 solid 3px;
+    }
+
+    div.formData {
+      text-align:center;
+      padding-bottom:20px;
+    }
+
+    div.formData > div {
+        padding: 15px;
+      padding-bottom: 10px;
+      margin:10px;
+      border-bottom:dashed white 2px;
+    }
+
+    div.formData label {
+      color:white;
+      text-transform : capitalize;
+      font-family:Courier New;
+      font-weight:500;
+    }
+
+    input {
+      border-top: #0053b3 outset 3px;
+      border-right: #0053b3 inset 3px;
+      border-bottom: #0053b3 inset 3px;
+      border-left:#0053b3 outset 3px;;
+      padding:10px;
+    }
+
+    /* !TEST! SE RENSEIGNER POUR AVOIR UNE BORDURE SUR INPUT EN ETAT ACTIF */ 
+      input::active {
+        border: #0053b3 solid 2px;
+      }
+    /* !TEST! SE RENSEIGNER POUR AVOIR UNE BORDURE SUR INPUT EN ETAT ACTIF */
+
+    input:valid {
+      color:#0053b3;
+      font-family: Courier New;
+      font-size: 16px;
+      font-weight:600;
+      text-align:center;
+    }
+
+    button {
+      background:#0053b3;
+      border: outset #0053b3 2px ;
+      padding: 12px;
+      text-transform : uppercase;
+      color:white;
+      font-weight:600
+    }
+
+    button:hover {
+      background:white;
+      color:#0053b3;
+    }
+
+    button:active {
+      background:#0053b3;
+      color:white;
+    }
+
+  /* FIN MISE EN FORME DU FORMULAIRE */
+/* FIN MISE EN FORME DU MAIN */
+
+/* MISE EN FORME DU FOOTER */
+
+  footer {
+  background:#26353f;
+  padding:30px;
+  display:flex;
+  justify-content:space-around;
+  }
+
+  /* MISE EN FORME PARTIE GAUCHE FOOTER */
+    footer img.estalab {
+      width: 175px;
+      min-width:100%;
+      max-width:100%;
+    }
+
+    footer div.contact {
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      margin-top:25px;
+    }
+
+    footer div.contact img {
+      width:25px;
+    }
+  /* FIN MISE EN FORME PARTIE GAUCHE FOOTER */
+
+  /* MISE EN FORME PARTIE DROITE FOOTER */
+    footer div.right-side {
+      justify-self:flex-end;
+    }
+        
+    footer a.home {
+      color:white;
+      text-transform:lowercase;
+      text-decoration:none;
+      font-weight:600;
+      font-size:2em;
+      font-family:Evolventa,Trebuchet MS,sans-serif
+    }
+
+    footer ul {
+          list-style-type: none;
+    }
+
+    footer ul li a {
+      display:inline-block;
+      padding:10px;
+      text-decoration:none;
+      text-transform:capitalize;
+      color:white;
+      font-family:Source Sans Pro,Arial,sans-serif;
+      font-size:16px;
+      font-weight:400;
+    }
+
+    footer ul li a:hover {
+      background:#53657d;
+      -webkit-transition: background ease-out 0.5s;
+      transition: background ease-out 0.5;
+    }
+
+    footer ul li a:active {
+      background:white;
+      color:#53657d;
+    }
+
+    footer ul li a span {
+      text-transform: uppercase;
+    }
+  /* FIN MISE EN FORMEPARTIE DROITE FOOTER */
+/* FIN MISE EN FORME DU FOOTER */
