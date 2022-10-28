@@ -60,7 +60,7 @@
   }
 
   .header-left-side a {
-  width:40%;  
+  width:40%;
   }
 
   .header-left-side img {
@@ -82,6 +82,7 @@
       padding:15px;
       font-weight:400;
       font-size:1,1em;
+      -webkit-transition: background ease-out 0.5s;
     }
 
     nav ul li a:hover {
@@ -93,6 +94,7 @@
     nav ul li a:active {
       background:#53657d;
       color:#C9D3DF;
+      -webkit-transition: background ease-out 0.5s;
     }
   /* FIN MISE EN FORME DE LA BARRE DE NAVIGATION */
 /* FIN MISE EN FORME DU HEADER */
@@ -102,7 +104,7 @@
     section.banner {
       background : #0053b3;
       display:flex;
-      padding:20px;
+      padding:5px;
       padding-left:10%;
     }
 
@@ -134,6 +136,7 @@
       text-transform:uppercase;
       padding:10px;
       border-radius:3px;
+      -webkit-transition: background ease-out 0.5s;
     }
 
     section.title h1 a:hover {
@@ -141,13 +144,14 @@
       -webkit-transition: background ease-out 0.5s;
       transition: background ease-out 0.5;
     }
-      section.title h1 a:active {
-        background:#006Be6;
-        color:#C9D3DF;
-      }
-    /* FIN MISE EN FORME DU TITRE PRE-FORMULAIRE */
+    section.title h1 a:active {
+      background:#006Be6;
+      color:#C9D3DF;
+      -webkit-transition: background ease-out 0.5s;
+    }
+  /* FIN MISE EN FORME DU TITRE PRE-FORMULAIRE */
 
-    /* MISE EN FORME DE L'OTARIE GIF */
+  /* MISE EN FORME DE L'OTARIE GIF */
     div.tenor-gif-embed {
       width:25% !important;
       margin:0 auto !important;
@@ -162,7 +166,6 @@
       width:80%;
       margin : 10px auto;
     }
-
 
     h1.form {
       text-align : center;
@@ -182,7 +185,7 @@
     }
 
     div.formData > div {
-        padding: 15px;
+      padding: 15px;
       padding-bottom: 10px;
       margin:10px;
       border-bottom:dashed white 2px;
@@ -203,44 +206,46 @@
       padding:10px;
     }
 
-    /* !TEST! SE RENSEIGNER POUR AVOIR UNE BORDURE SUR INPUT EN ETAT ACTIF */ 
-      input::active {
-        border: #0053b3 solid 2px;
-      }
-    /* !TEST! SE RENSEIGNER POUR AVOIR UNE BORDURE SUR INPUT EN ETAT ACTIF */
-
-    input:valid {
-      color:#0053b3;
-      font-family: Courier New;
-      font-size: 16px;
-      font-weight:600;
-      text-align:center;
+  /* !TEST! SE RENSEIGNER POUR AVOIR UNE BORDURE SUR INPUT EN ETAT ACTIF */ 
+    input::active {
+      border: #0053b3 solid 2px;
     }
+  /* !TEST! SE RENSEIGNER POUR AVOIR UNE BORDURE SUR INPUT EN ETAT ACTIF */
 
-    button {
-      background:#0053b3;
-      border: outset #0053b3 2px ;
-      padding: 12px;
-      text-transform : uppercase;
-      color:white;
-      font-weight:600
-    }
+  input:valid {
+    color:green;
+    font-family: Courier New;
+    font-size: 16px;
+    font-weight:600;
+    text-align:center;
+  }
 
-    button:hover {
-      background:white;
-      color:#0053b3;
-    }
+  button {
+    background:#0053b3;
+    border: outset #0053b3 2px ;
+    padding: 12px;
+    text-transform : uppercase;
+    color:white;
+    font-weight:600;
+    transition: background ease-out 0.5s;
+  }
 
-    button:active {
-      background:#0053b3;
-      color:white;
-    }
+  button:hover {
+    background:white;
+    color:#0053b3;
+    transition: background ease-out 0.5s;
+  }
 
+  button:active {
+    background:green;
+    border: outset green 2px;
+    color:white;
+    transition: background ease-out 0.5s;
+  }
   /* FIN MISE EN FORME DU FORMULAIRE */
 /* FIN MISE EN FORME DU MAIN */
 
 /* MISE EN FORME DU FOOTER */
-
   footer {
   background:#26353f;
   padding:30px;
@@ -264,6 +269,7 @@
 
     footer div.contact img {
       width:25px;
+      height:25px;
     }
   /* FIN MISE EN FORME PARTIE GAUCHE FOOTER */
 
@@ -296,13 +302,32 @@
       font-weight:400;
     }
 
-    footer ul li a:hover {
+    footer .left-side a {
+      padding:10px;
+      -webkit-transition: background ease-out 0.5s;
+      }
+      
+    footer .left-side a:hover {
+      background:#53657d;
+      -webkit-transition: background ease-out 0.5s;
+      transition: background ease-out 0.5;
+      }
+
+    footer .left-side a:active {
+      background:#0053b3;
+    }
+
+    footer .right-side a {
+      -webkit-transition: background ease-out 0.5s;
+    }
+      
+    footer .right-side a:hover {
       background:#53657d;
       -webkit-transition: background ease-out 0.5s;
       transition: background ease-out 0.5;
     }
 
-    footer ul li a:active {
+    footer .right-side a:active {
       background:white;
       color:#53657d;
     }
