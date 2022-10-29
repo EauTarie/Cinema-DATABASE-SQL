@@ -1,0 +1,13 @@
+COMMANDE POUR LANCER DOCKER CINEMA.SQL:
+
+	docker exec -it afpa-cinema-database-db-1 bash;
+
+
+--------------------------------
+
+
+Commande pour se connecter à l'utilisateur RACINE :
+
+	mysql -u root -p;
+
+		PASSWORD : EauTarie

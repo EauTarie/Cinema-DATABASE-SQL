@@ -1,0 +1,35 @@
+		   CARDINALITÉ
+
+- Un admin peut avoir 0 ou plusieurs cinemas
+---------------------------------------------
+- Un cinema doit avoir 1 admin ou 
+peut en avoir plusieurs
+- Un cinema peut avoir 0 ou plusieurs séances
+- Un cinema peut avoir 1 ou plusieurs salles
+---------------------------------------------
+- Une seance peut avoir 1 seul cinéma
+- Une seance peut avoir 1 seul film
+- Une seance peut avoir 1 salles
+- Une seance peut avoir 0 ou plusieurs 
+tickets
+---------------------------------------------
+- Un ticket peut avoir 1 seul seance
+- Un ticket peut avoir 0 ou 1 seul commande
+- Un ticket peut avoir 1 seul prix
+---------------------------------------------
+- Un prix peut avoir 1 ou plusieurs ticket(s)
+- Un prix peut avoir 1 seul ou plusieurs 
+film(s)
+---------------------------------------------
+- Un film peut avoir 1 ou plusieurs prix
+- Un film peut avoir 0 ou plusieurs séances
+---------------------------------------------
+- Une salle peut avoir 1 seul cinema
+- une salle peut avoir 0 ou 1 seule séance
+---------------------------------------------
+- Une commande peut avoir 1 ou plusieurs 
+ticket(s)
+- Une commande ne peut avoir qu'un client
+---------------------------------------------
+- Un client peut avoir 0 ou plusieurs 
+commandes
