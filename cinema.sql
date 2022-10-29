@@ -1,7 +1,7 @@
 -- ----------------------------------------------------------------------
 
 -- Devoir effectué par :
-    --  LOUBEAU Alexandre
+    --  Alexandre
     --  Discord : Eau Tarie#5281
     --  Pseudo sur le serveur Discord de l'Afpa : Wikipédia (Eau Tarie / Alex)
 
